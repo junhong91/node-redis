@@ -2,6 +2,11 @@
 
 ***
 
+### Run api server
+```
+node server.js
+```
+
 ### Create post
 
 <br>
