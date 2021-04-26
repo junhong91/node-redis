@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const albums = require('./albums')
+const posts = require('./posts')
 
 router
-    .post('/album', albums.create)
+    .get('/posts/:id', posts.show)
+    .post('/post', posts.create)
 
 module.exports = router
