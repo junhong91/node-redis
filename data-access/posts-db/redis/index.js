@@ -1,6 +1,6 @@
 
-const redisClient = require('../../../db/redis/models/post');
-const makePost = require('../../../models/post/index') // model
+const redisClient = require('../../../db/redis/client');
+const makePost = require('../../../models/post/index');
 
 let findPost = (postId) => {
     return redisClient.hgetallAsync(`id:${postId}`);
